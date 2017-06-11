@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Moment.js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Ledger" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Welcome to the Train Station</h1>
+        </div data="page-header">
+        <div class="row">
+            <div class="panel panel-default">
+                <!-- Top panel for displaying info -->
+                <div class="panel-heading">Train Schedule</div>
+                <!-- Table showing information-->
+                <table class="table table-striped" id="train-table">
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                    <p>
+                    </p>
+                </table>
+            </div>
+        </div data="row 2">
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="add-train-panel">Add Train</div>
+                <br>
+                <div class="container">
+                    <label for="basic-url">Train Name</label>
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="sizing-addon3"></span>
+                        <input type="text" class="form-control" placeholder="Northeastern Express" aria-describedby="sizing-addon3" id="train-name"/>
+                    </div>
+                    <label for="basic-url">Destination</label>
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="sizing-addon3"></span>
+                        <input type="text" class="form-control" placeholder="New York City" aria-describedby="sizing-addon3" id="destination"/>
+                    </div>
+                    <label for="basic-url">First Train Time</label>
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="sizing-addon3"></span>
+                        <input type="time" class="form-control" placeholder="02:00" aria-describedby="sizing-addon3" id="first-train-time"/>
+                    </div>
+                    <label for="basic-url">Frequency (min)</label>
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="sizing-addon3"></span>
+                        <input type="number" class="form-control" placeholder="4 minutes" aria-describedby="sizing-addon3" id="frequency"/>
+                    </div>
+                    <label for="basic-url">Next Arrival</label>
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="sizing-addon3"></span>
+                        <input type="time" class="form-control" placeholder="9:00AM" aria-describedby="sizing-addon3" id="next-arrival"/>
+                    </div>
+                    <br>
+                    <center>
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default" id="submit">Submit</button>
+                        <br>
+                    </div>
+                    </center>
+                </div>
+            </div>
+        </div data="row 3">
+    </div>
+
+    <!-- Javascript -->
+
+  <script src="../js/schedule.js"></script>
+
+</body>
+</html>

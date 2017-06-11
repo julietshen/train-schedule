@@ -1,0 +1,33 @@
+	body {
+		background-image: url(http://www.thedailybeast.com/content/dam/dailybeast/2013/01/31/130131-grand-central-anniversary-begley-tease.jpg);
+	}
+	.page-header {
+        color: white;
+        background: black;
+        padding: 2em;
+        text-align: center;
+        font-family: 'Ledger', serif;
+    }
+    
+    #train-table {
+        /*background-color: #0198E1;
+      color: white;*/
+        font-weight: heavy;
+    }
+    
+    .input-heading {
+        background-color: goldenrod;
+    }
+    
+    #sizing-addon3 {
+        color: black;
+        font-weight: heavy;
+    }
+
+    .panel-heading {
+		background-color: goldenrod;
+    }
+    
+    h1 {
+        font-size: 45px;
+    }
